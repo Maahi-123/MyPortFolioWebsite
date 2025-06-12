@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahendra’s Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">Mahendra’s Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="photo1.png" alt="Mahendra’s Photo" />
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <p>Computer Science graduate (2024) with strong foundation in Java, Python, SQL, and software development principles. Hands-on experience building full-stack applications and implementing data pipelines using Python, JDBC, and MySQL. Developed projects using OpenAI APIs, and MVC architecture. Completed internships and certifications in full-stack development in Python and Java. A quick learner with strong problem-solving, collaboration, and communication skills, eager to contribute to innovative software development teams.</p>
+          
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="education">Education</button>
+            <button class="tab-btn" data-tab="skills">Skills</button>
+            <button class="tab-btn" data-tab="certifications">Certifications</button>
+          </div>
+          <div class="tab-content active" id="education">
+            <ul>
+              <li><strong>2020–2024:</strong> BE in CSE – Sri Venkateshwara College of Engineering, Bangalore (8.59 CGPA)</li>
+              <li><strong>2018–2020:</strong> PU – Kanakashree Jnanadeepa PU College (86%)</li>
+              <li><strong>2017–2018:</strong> SSLC – Sri Ramakrishna Rural High School (93.76%)</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="skills">
+            <ul>
+              <li><strong>Languages:</strong> Python, Java, HTML, CSS, OOPS</li>
+              <li><strong>Databases:</strong> MySQL(RDBMS), MongoDB(noSQL)</li>
+              <li><strong>Tools:</strong> Git, Eclipse, VS Code, PyCharm</li>
+              <li><strong>Frameworks:</strong> Selenium, JDBC, Hibernate</li>
+              <li><strong>Soft Skills:</strong> Teamwork, Communication, Quick Learning</li>
+            </ul>
+          </div>
+          <div class="tab-content" id="certifications">
+            <ul>
+              <li>Java & Python Full‑Stack – Global Quest Technology, Bangalore</li>
+              <li>Web Development Masterclass – Udemy</li>
+              <li>Applied Cloud Computing for Software Development – Edunet Foundation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <div class="card">
+        <h3>Internship – OpenWeaver India (Aug–Sep 2023)</h3>
+        <p><strong>Sentiment Analysis for Product Reviews</strong></p>
+        <ul>
+          <li>Developed an end-to-end sentiment analysis pipeline using Python, Pandas, and scikit-learn to classify product reviews.</li>
+          <li>Applied NLP techniques and CountVectorizer for feature extraction. Trained models like Random Forest for sentiment classification.</li>
+          <li>Visualized sentiment trends using Matplotlib and WordCloud. Helped improve product feedback analysis and user satisfaction.</li>
+        </ul>
+        <a class="btn-link" href="https://github.com/Maahi-123/SentimentAnalysis---Python-Project" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="Designer.jpeg" alt="Car Service System" />
+          <h4>Car Service System</h4>
+          <ul>
+            <li>Web-based system for scheduling and managing car service appointments using MVC architecture (Java, JDBC, Tomcat).</li>
+            <li>Designed MySQL schema with optimized queries for fast performance and real-time updates.</li>
+            <li>Technologies Used: Java, JDBC, MySQL, HTML, CSS, Tomcat</li>
+          </ul>
+          <a class="btn-link" href="https://github.com/Maahi-123/Car-Service-System-Java-Project" target="_blank">GitHub Repo</a>
+        </div>
+
+        <div class="project-card">
+          <img src="AIImages.jpeg" alt="AI Web App" />
+          <h4>AI Web App</h4>
+          <ul>
+            <li>Created an AI-powered text and image generator using OpenAI’s GPT and DALL·E APIs.</li>
+            <li>Built modular frontend with HTML, CSS, JS, and API integration for responsive UI.</li>
+            <li>Technologies: HTML, CSS, JS, OpenAI APIs (GPT + DALL·E)</li>
+          </ul>
+          <a class="btn-link" href="https://github.com/Maahi-123/Web-Application-for-Text-Image-Generation" target="_blank">GitHub Repo</a>
+        </div>
+
+        <div class="project-card">
+          <img src="restaurant.jpeg" alt="Restaurant Management System" />
+          <h4>Restaurant Management System</h4>
+          <ul>
+            <li>Database-driven system for order handling, inventory, and billing.</li>
+            <li>Built with HTML, CSS, and MySQL, boosting operational efficiency.</li>
+          </ul>
+          <a class="btn-link" href="https://github.com/Maahi-123/Restaurant-Management-Sysytem" target="_blank">GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i class="fas fa-envelope"></i>
+            <a href="mailto:mahendrarm788@gmail.com">mahendrarm788@gmail.com</a>
+          </p>
+          <p><i class="fas fa-phone"></i>
+            <a href="tel:+916366077226">+91 63660 77226</a>
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="social-btn" href="https://www.linkedin.com/in/mahendrarm788" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="social-btn" href="https://github.com/Maahi-123" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a class="btn main-btn" href="https://drive.google.com/file/d/.../view" target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Mahendra • Built by Me</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
